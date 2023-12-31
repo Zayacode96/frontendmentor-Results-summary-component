@@ -7,12 +7,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet"> 
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution  a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
@@ -40,33 +41,49 @@
       <div class="second-content">
       <h2>Summary</h2>
       <div class="results">
-        <div class="result-box">
-          <i></i>
+        <div class="result-box reaction">
+          <i class="fa-solid fa-bolt"></i>
+         
           <p>Reaction</p>
-          <p>80
+         
+          <div class="space">
+          <p> 80
             <span> / 100</span>
           </p>
+         </div>
         </div>
-        <div class="result-box">
-          <i></i>
+        <div class="result-box memory">
+          <i class="fa-solid fa-brain"></i>
+         
           <p>Memory</p>
+
+          <div class="space">
           <p> 92 
             <span> / 100</span>
           </p>
+          </div>
         </div>
-        <div class="result-box">
-          <i></i>
+        <div class="result-box verbal">
+          <i class="fa-regular fa-comment-dots"></i>
+         
           <p>Verbal</p>
+          
+          <div class="space">
           <p> 61
             <span> / 100</span>
           </p>
+          </div>
         </div>
-        <div class="result-box">
-          <i></i>
+        <div class="result-box visual">
+          <i class="fa-regular fa-eye"></i>
+          
           <p>Visual</p>
+          
+          <div class="space">
           <p> 72
             <span> / 100 </span>
           </p>
+          </div>
         </div>
       </div>
       <div class="component">

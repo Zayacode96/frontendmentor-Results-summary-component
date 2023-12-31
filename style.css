@@ -17,7 +17,6 @@ body {
 
 
 
-
 /****  LAYOUT     ****/
 
 .card-container {
@@ -33,6 +32,7 @@ body {
         position: relative;
         border-radius: 20px;
         text-align: center;
+        box-shadow: 5px 25px 15px hsl(221, 100%, 96%)
     }
 
 
@@ -45,7 +45,7 @@ body {
 
     .first-card {
         width: 250px;
-        height: 340px;
+        height: 350px;
         background-color: #fff;
         color: #fff;
         left: 1.9rem;
@@ -94,7 +94,7 @@ body {
         border: 1px solid hsla(252, 100%, 67%, 0.5);
         border-radius: 50%;
         margin: auto;
-        background: linear-gradient(-180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        background: linear-gradient(-180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0.3));
     }
 
     .score-circle span {
@@ -121,24 +121,125 @@ body {
     /*** Second Card  ***/
 
     .second-card {
-        width: 270px;
-        height: 340px;
-        box-shadow: 10px 10px 10px skyblue;
+        width: 250px;
+        height: 350px;
+        /*box-shadow: 10px 10px 10px hsl(221, 100%, 96%);*/
         flex-grow: 0.05;
     }
                
      
     .second-content h2 {
         font-size: 1.1em;
+        position: relative;
+        right: 50px;
+        top: 20px;
+        margin-bottom: 20px; 
+        font-weight: 500; 
+    }
+
+    .results {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        position: relative;
+        top: 20px;
+        left: 15px;
     }
 
     .result-box {
-        position: relative;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        width: 180px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        padding: 10px;
+        font-weight: 500;
+        
     }
 
-    .result-box p {
-        margin-right: 40px;
+    .result-box span {
+        color: hsla(224, 30%, 27%, 0.6);   
+     }
+
+    /* result box colors */
+
+    .results .reaction {
+        background-color: hsla(0, 100%, 67%, 0.05);
     }
-`
+
+    .reaction i, .reaction > p:nth-of-type(1) {
+        color: hsla(0, 100%, 40%, 0.5);
+    }
+
+    .results .memory {
+        background-color: hsla(39, 100%, 56%, 0.05);
+    }
+
+    .memory i, .memory > p:nth-of-type(1) {
+        color: hsla(40, 90%, 50%, 0.7);
+    }
+
+    .results .verbal {
+        background-color: hsla(166, 100%, 37%, 0.05);
+    }
+
+    .verbal i, .verbal > p:nth-of-type(1) {
+        color: hsla(166, 100%, 40%, 1);
+    }
+
+    .results .visual {
+        background-color: hsla(234, 85%, 45%, 0.05);
+    }
+
+    .visual i, .visual > p:nth-of-type(1) {
+        color: hsl(234, 85%, 45%, 0.8);
+    }
+ 
+    /********/
+
+    .result-box p {
+        font-size: 12.5px;
+    }
+
+    .result-box i {
+       font-size: 12px;
+    }
+
+    .result-box > p:nth-of-type(1) {
+        
+    }
+
+    .space {
+        margin-left: 35px;
+    }
+
+
+
+    .component {
+        position: relative;
+        top: 50px;
+        left: 15px;
+       
+    }
+
+    .component .btn {
+        width: 200px;
+        height: 50p;
+        padding: 10px;
+        border-color: hsl(224, 30%, 27%);
+        border-radius: 25px;
+        color: hsla(0, 0%, 100%, 0.9);
+        background-color: hsl(224, 30%, 27%);
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        background-color: hsla(224, 30%, 27%, 0.9);
+    }
+
+    .btn:active {
+        background-color: hsla(300, 20%, 27%, 0.9);
+    }
